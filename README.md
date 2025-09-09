@@ -1,7 +1,5 @@
 # Elo Digital - Inclusão Digital para a Terceira Idade
 
-![Protótipo do Elo Digital](https://i.imgur.com/r6w5g3N.png)
-
 ## 📖 Sobre o Projeto
 
 [cite_start]**Elo Digital** é um projeto de impacto social concebido como uma plataforma web responsiva, dedicada a promover a inclusão digital para pessoas idosas (acima de 60 anos)[cite: 5, 6, 12, 22]. [cite_start]A iniciativa visa combater a desigualdade digital geracional, que no Brasil afeta milhões de idosos, sendo a principal barreira o "não saber usar a tecnologia"[cite: 11, 15].
