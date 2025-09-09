@@ -2,18 +2,18 @@
 
 ## 📖 Sobre o Projeto
 
-[cite_start]**Elo Digital** é um projeto de impacto social concebido como uma plataforma web responsiva, dedicada a promover a inclusão digital para pessoas idosas (acima de 60 anos)[cite: 5, 6, 12, 22]. [cite_start]A iniciativa visa combater a desigualdade digital geracional, que no Brasil afeta milhões de idosos, sendo a principal barreira o "não saber usar a tecnologia"[cite: 11, 15].
+**Elo Digital** é um projeto de impacto social concebido como uma plataforma web responsiva, dedicada a promover a inclusão digital para pessoas idosas (acima de 60 anos). A iniciativa visa combater a desigualdade digital geracional, que no Brasil afeta milhões de idosos, sendo a principal barreira o "não saber usar a tecnologia".
 
-[cite_start]O projeto ataca as consequências diretas dessa exclusão, como o isolamento social, a perda de autonomia em serviços essenciais (bancários, médicos) e a maior vulnerabilidade a golpes online[cite: 17, 18, 19]. [cite_start]A plataforma foi desenhada para ser um ecossistema de aprendizado e suporte, fortalecendo a **confiança digital** do usuário sênior[cite: 22, 39].
+O projeto ataca as consequências diretas dessa exclusão, como o isolamento social, a perda de autonomia em serviços essenciais (bancários, médicos) e a maior vulnerabilidade a golpes online. A plataforma foi desenhada para ser um ecossistema de aprendizado e suporte, fortalecendo a **confiança digital** do usuário sênior.
 
 ## ✨ Principais Funcionalidades
 
-[cite_start]A solução se baseia em um tripé tecnológico e humano para criar um ambiente de aprendizado seguro e acolhedor[cite: 23]:
+A solução se baseia em um tripé tecnológico e humano para criar um ambiente de aprendizado seguro e acolhedor:
 
-* [cite_start]**📚 Biblioteca de Micro-aulas:** Conteúdos em vídeo, curtos e objetivos, focados em tarefas práticas do cotidiano digital[cite: 24]. As aulas abordam temas como:
-    * [cite_start]Como usar o WhatsApp[cite: 1].
-    * [cite_start]Pagar contas pelo celular[cite: 1].
-    * [cite_start]Assistir a vídeos no YouTube[cite: 1].
+**📚 Biblioteca de Micro-aulas:** Conteúdos em vídeo, curtos e objetivos, focados em tarefas práticas do cotidiano digital[cite: 24]. As aulas abordam temas como:
+    * Como usar o WhatsApp.
+    * Pagar contas pelo celular.
+    * Assistir a vídeos no YouTube.
 
 * [cite_start]**🆘 Canal de Ajuda Humanizado:** Um botão de destaque ("Preciso de Ajuda") conecta o usuário em tempo real com um voluntário treinado, via chamada de voz ou chat, para resolver dificuldades imediatas e reduzir a frustração[cite: 26, 27].
 
