@@ -1,7 +1,5 @@
 # Elo Digital - Inclusão Digital para a Terceira Idade
 
-![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-
 ![Protótipo do Elo Digital](https://i.imgur.com/r6w5g3N.png)
 
 ## 📖 Sobre o Projeto
