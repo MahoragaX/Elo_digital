@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elo Digital - Inclusão Digital para a Terceira Idade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para garantir alto contraste em foco, melhorando acessibilidade */
+        :focus-visible {
+            outline: 3px solid #059669;
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-emerald-700">Elo Digital</h1>
+            <nav>
+                <a href="#aulas" class="text-lg text-gray-600 hover:text-emerald-700 transition-colors duration-300">Ver Aulas</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <main id="main-content" class="container mx-auto px-6 py-12">
+        <section class="text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Conecte-se ao mundo digital com confiança.</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">Aprenda a usar o celular e o computador de forma simples, no seu ritmo e com ajuda sempre que precisar.</p>
+        </section>
+
+        <!-- Botão de Ajuda Humanizado -->
+        <section id="ajuda" class="mt-16 text-center">
+             <h3 class="text-3xl font-bold mb-6">Está com alguma dificuldade agora?</h3>
+            <button id="helpButton" class="bg-emerald-600 text-white font-bold text-2xl px-10 py-5 rounded-lg shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-4 focus:ring-emerald-300 transition-transform transform hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block mr-3" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C6.477 18 2 13.523 2 8V3z" />
+                </svg>
+                Preciso de Ajuda
+            </button>
+            <p class="text-gray-500 mt-4">Clique aqui para falar com um de nossos voluntários.</p>
+        </section>
+
+        <!-- Biblioteca de Micro-aulas -->
+        <section id="aulas" class="mt-20">
+            <h3 class="text-3xl font-bold text-center mb-10">Biblioteca de Micro-aulas</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card de Aula 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-blue-100 p-4 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V10a2 2 0 012-2h8z" /></svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-2">Como usar o WhatsApp</h4>
+                    <p class="text-gray-600 mb-6">Aprenda a enviar mensagens, fotos e fazer chamadas de vídeo para sua família e amigos.</p>
+                    <a href="#" id="start-aula-whatsapp" class="mt-auto text-lg bg-blue-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors">Ver Aula</a>
+                </div>
+                <!-- Card de Aula 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-yellow-100 p-4 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-2">Pagar contas pelo celular</h4>
+                    <p class="text-gray-600 mb-6">Veja como é fácil e seguro pagar suas contas usando a câmera do celular, sem sair de casa.</p>
+                    <a href="#" id="start-aula-pagar-contas" class="mt-auto text-lg bg-yellow-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-yellow-700 transition-colors">Ver Aula</a>
+                </div>
+                <!-- Card de Aula 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-rose-100 p-4 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-rose-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold mb-2">Assistir vídeos no YouTube</h4>
+                    <p class="text-gray-600 mb-6">Encontre vídeos de receitas, músicas antigas, novelas e tudo o que você mais gosta de assistir.</p>
+                    <a href="#" id="start-aula-youtube" class="mt-auto text-lg bg-rose-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-rose-700 transition-colors">Ver Aula</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ambiente de Prática Segura -->
+        <section id="pratica" class="mt-20">
+            <h3 class="text-3xl font-bold text-center mb-10">Ambiente de Prática Segura</h3>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-10">Treine o que você aprendeu em ambientes que imitam os aplicativos de verdade, mas sem risco de errar.</p>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Card de Prática 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center hover:shadow-xl transition-shadow duration-300">
+                    <div class="bg-indigo-100 p-3 rounded-lg mr-6">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01" /><path d="M12 18H9.816c-2.457 0-4.52-1.603-4.79-3.954l-.001-.025A5.002 5.002 0 015 9.002c0-2.584 1.956-4.74 4.479-4.981l.022-.001C11.936 4.002 14.11 3 16.5 3c2.757 0 5 2.243 5 5 0 2.457-1.773 4.512-4.104 4.939" /></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-1">Simulador de Banco</h4>
+                        <a href="#" id="start-banco" class="text-indigo-600 font-semibold hover:underline">Começar a praticar &rarr;</a>
+                    </div>
+                </div>
+                <!-- Card de Prática 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 flex items-center hover:shadow-xl transition-shadow duration-300">
+                     <div class="bg-teal-100 p-3 rounded-lg mr-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teal-600" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-semibold mb-1">Simulador de Instagram</h4>
+                        <a href="#" id="start-social" class="text-teal-600 font-semibold hover:underline">Começar a praticar &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PÁGINAS ESCONDIDAS (AULAS E SIMULADORES) -->
+    <div id="pages-container">
+        <!-- Aula WhatsApp -->
+        <section id="aula-whatsapp" class="container mx-auto px-6 py-12 hidden">
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-3xl font-bold text-blue-600">Aula: Como usar o WhatsApp</h3>
+                    <button id="voltar-whatsapp" class="text-lg text-gray-600 hover:text-gray-900 font-semibold">&larr; Voltar para o início</button>
+                </div>
+                <div class="bg-gray-200 w-full aspect-video rounded-lg mb-8 flex items-center justify-center">
+                    <p class="text-gray-500 text-2xl">Vídeo da aula aqui</p>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Passo a passo:</h4>
+                <ol class="list-decimal list-inside space-y-4 text-xl text-gray-700">
+                    <li>Abra o aplicativo WhatsApp tocando no ícone verde.</li>
+                    <li>Para mandar mensagem, toque no nome da pessoa na lista.</li>
+                    <li>Escreva sua mensagem no campo que aparece embaixo.</li>
+                    <li>Toque na setinha verde para enviar a mensagem.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Aula Pagar Contas -->
+        <section id="aula-pagar-contas" class="container mx-auto px-6 py-12 hidden">
+             <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-3xl font-bold text-yellow-600">Aula: Pagar contas pelo celular</h3>
+                    <button id="voltar-pagar-contas" class="text-lg text-gray-600 hover:text-gray-900 font-semibold">&larr; Voltar para o início</button>
+                </div>
+                <div class="bg-gray-200 w-full aspect-video rounded-lg mb-8 flex items-center justify-center">
+                    <p class="text-gray-500 text-2xl">Vídeo da aula aqui</p>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Passo a passo:</h4>
+                <ol class="list-decimal list-inside space-y-4 text-xl text-gray-700">
+                    <li>Abra o aplicativo do seu banco.</li>
+                    <li>Procure a opção "Pagar" ou "Leitor de código de barras".</li>
+                    <li>Aponte a câmera do celular para o código de barras da sua conta.</li>
+                    <li>Confira se o valor está correto e confirme com sua senha.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Aula YouTube -->
+        <section id="aula-youtube" class="container mx-auto px-6 py-12 hidden">
+            <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="text-3xl font-bold text-rose-600">Aula: Assistir vídeos no YouTube</h3>
+                    <button id="voltar-youtube" class="text-lg text-gray-600 hover:text-gray-900 font-semibold">&larr; Voltar para o início</button>
+                </div>
+                <div class="bg-gray-200 w-full aspect-video rounded-lg mb-8 flex items-center justify-center">
+                    <p class="text-gray-500 text-2xl">Vídeo da aula aqui</p>
+                </div>
+                <h4 class="text-2xl font-bold mb-4">Passo a passo:</h4>
+                <ol class="list-decimal list-inside space-y-4 text-xl text-gray-700">
+                    <li>Abra o aplicativo do YouTube.</li>
+                    <li>Toque na lupa, no topo da tela, para pesquisar.</li>
+                    <li>Digite o que você quer assistir (ex: "receita de bolo de fubá").</li>
+                    <li>Toque no vídeo que você quer ver para começar a assistir.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Simulador de Banco -->
+        <section id="simulador-banco" class="container mx-auto px-4 py-8 hidden">
+            <div class="max-w-sm mx-auto bg-gray-100 p-4 rounded-2xl shadow-lg font-sans">
+                <div class="flex justify-between items-center mb-6 px-2">
+                    <div class="flex items-center gap-3">
+                        <img src="https://placehold.co/48x48/93C5FD/1E3A8A?text=M" alt="Foto de perfil de Maria" class="rounded-full">
+                        <div>
+                            <p class="text-lg text-gray-500">Bem-vinda de volta,</p>
+                            <p class="font-bold text-xl text-gray-800">Maria Silva</p>
+                        </div>
+                    </div>
+                    <button id="voltar-banco" class="text-lg text-indigo-600 hover:text-indigo-800 font-semibold">Sair</button>
+                </div>
+
+                <div class="bg-white rounded-xl p-5 mb-8">
+                    <p class="text-lg text-gray-500">Saldo em conta</p>
+                    <p class="text-4xl font-bold text-gray-800 mt-1">R$ 1.234,56</p>
+                </div>
+
+                <div class="space-y-4">
+                    <a href="#" class="flex items-center bg-white p-4 rounded-xl shadow-sm hover:bg-gray-50 w-full text-left transition-colors">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg w-14 h-14 flex items-center justify-center mr-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                        <div>
+                            <p class="font-bold text-xl">Área Pix</p>
+                            <p class="text-md text-gray-500">Para enviar e receber dinheiro.</p>
+                        </div>
+                    </a>
+                     <a href="#" class="flex items-center bg-white p-4 rounded-xl shadow-sm hover:bg-gray-50 w-full text-left transition-colors">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg w-14 h-14 flex items-center justify-center mr-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg></div>
+                        <div>
+                            <p class="font-bold text-xl">Pagar Contas</p>
+                            <p class="text-md text-gray-500">Use a câmera para pagar boletos.</p>
+                        </div>
+                    </a>
+                     <a href="#" class="flex items-center bg-white p-4 rounded-xl shadow-sm hover:bg-gray-50 w-full text-left transition-colors">
+                        <div class="bg-indigo-100 text-indigo-600 rounded-lg w-14 h-14 flex items-center justify-center mr-5 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div>
+                        <div>
+                            <p class="font-bold text-xl">Ver Extrato</p>
+                            <p class="text-md text-gray-500">Veja suas últimas movimentações.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="mt-8 bg-yellow-100 border-l-4 border-yellow-500 text-yellow-800 p-4 rounded-lg" role="alert">
+                    <div class="flex">
+                        <div class="py-1"><svg class="fill-current h-6 w-6 text-yellow-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm1-8a1 1 0 011 1v4a1 1 0 11-2 0V7a1 1 0 011-1z"/></svg></div>
+                        <div>
+                            <p class="font-bold text-lg">Dica de Segurança</p>
+                            <p class="text-md">Seu banco NUNCA pedirá sua senha ou código de segurança por telefone ou mensagem. Desconfie de links suspeitos!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simulador de Instagram -->
+        <section id="simulador-rede-social" class="container mx-auto px-0 md:px-6 py-8 hidden">
+            <div class="max-w-sm mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+                <header class="flex justify-between items-center p-3 border-b">
+                    <h2 class="font-bold text-2xl" style="font-family: 'Grand Hotel', cursive;">Instagram</h2>
+                    <button id="voltar-social" class="text-lg text-blue-600 hover:text-blue-800 font-semibold">Sair</button>
+                </header>
+                
+                <div class="space-y-4 py-4">
+                    <!-- Post 1 -->
+                    <div class="bg-white">
+                        <div class="flex items-center p-3">
+                            <img src="https://placehold.co/48x48/E2E8F0/4A5568?text=N" class="rounded-full mr-3" alt="Foto do perfil de Neto João">
+                            <p class="font-bold text-lg">Seu neto</p>
+                        </div>
+                        <img src="https://placehold.co/600x400/F9A825/FFFFFF?text=Bolo+de+Cenoura" class="w-full" alt="Foto de um bolo de cenoura">
+                        <div class="px-3 pt-3">
+                             <div class="flex gap-4">
+                                <button class="flex items-center gap-2 text-gray-700 font-semibold text-lg hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                                    Curtir
+                                </button>
+                                <button class="flex items-center gap-2 text-gray-700 font-semibold text-lg hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                                    Comentar
+                                </button>
+                            </div>
+                            <p class="mt-2 text-lg"><b class="font-bold">Seu neto</b> Fiz um bolo de cenoura delicioso hoje! 🥕🍰</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Alerta de Segurança -->
+                    <div class="bg-red-100 border-y-2 border-red-200 p-4" role="alert">
+                         <div class="flex items-start">
+                            <div class="pt-1"><svg class="fill-current h-6 w-6 text-red-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm-1-4a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm1-8a1 1 0 011 1v4a1 1 0 11-2 0V7a1 1 0 011-1z"/></svg></div>
+                            <div>
+                                <p class="font-bold text-lg text-red-800">Atenção a Golpes!</p>
+                                <p class="text-md text-red-700">Cuidado com mensagens dizendo que você ganhou um prêmio. Empresas sérias não pedem informações pessoais por mensagem direta.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 2 -->
+                     <div class="bg-white">
+                        <div class="flex items-center p-3">
+                             <img src="https://placehold.co/48x48/FBCFE8/831843?text=F" class="rounded-full mr-3" alt="Foto do perfil de Filha Maria">
+                            <p class="font-bold text-lg">Sua filha</p>
+                        </div>
+                        <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Flor+Rosa" class="w-full" alt="Foto de uma flor rosa">
+                         <div class="px-3 pt-3">
+                             <div class="flex gap-4">
+                                <button class="flex items-center gap-2 text-gray-700 font-semibold text-lg hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                                    Curtir
+                                </button>
+                                <button class="flex items-center gap-2 text-gray-700 font-semibold text-lg hover:bg-gray-100 p-2 rounded-lg transition-colors">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                                    Comentar
+                                </button>
+                            </div>
+                            <p class="mt-2 text-lg"><b class="font-bold">Sua filha</b> Olha que linda a flor que nasceu no meu jardim! 🌸</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-800 text-white mt-20">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="text-2xl font-bold">Elo Digital</p>
+            <p class="text-gray-400 mt-2">Promovendo autonomia e reduzindo o isolamento social.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Ajuda -->
+    <div id="helpModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="bg-white rounded-lg shadow-2xl p-8 md:p-12 text-center max-w-md w-full relative" id="modal-content">
+            <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800" aria-label="Fechar modal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <h4 id="modal-title" class="text-3xl font-bold text-emerald-700 mb-4">Aguarde um momento...</h4>
+            <div class="flex justify-center items-center my-6">
+                <svg class="animate-spin h-10 w-10 text-emerald-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
+            </div>
+            <p class="text-lg text-gray-600">Estamos conectando você com um voluntário disponível para ajudar. Por favor, não feche esta janela.</p>
+        </div>
+    </div>
+
+    <script>
+        // --- Elementos ---
+        const helpButton = document.getElementById('helpButton');
+        const helpModal = document.getElementById('helpModal');
+        const closeModalButton = document.getElementById('closeModal');
+        
+        const mainContent = document.getElementById('main-content');
+        const pagesContainer = document.getElementById('pages-container');
+
+        // Páginas de Aulas
+        const aulaWhatsapp = document.getElementById('aula-whatsapp');
+        const aulaPagarContas = document.getElementById('aula-pagar-contas');
+        const aulaYoutube = document.getElementById('aula-youtube');
+        
+        // Páginas de Simuladores
+        const simuladorBanco = document.getElementById('simulador-banco');
+        const simuladorSocial = document.getElementById('simulador-rede-social');
+
+        // Botões de Início
+        const startAulaWhatsappBtn = document.getElementById('start-aula-whatsapp');
+        const startAulaPagarContasBtn = document.getElementById('start-aula-pagar-contas');
+        const startAulaYoutubeBtn = document.getElementById('start-aula-youtube');
+        const startBancoBtn = document.getElementById('start-banco');
+        const startSocialBtn = document.getElementById('start-social');
+
+        // Botões de Voltar
+        const voltarWhatsappBtn = document.getElementById('voltar-whatsapp');
+        const voltarPagarContasBtn = document.getElementById('voltar-pagar-contas');
+        const voltarYoutubeBtn = document.getElementById('voltar-youtube');
+        const voltarBancoBtn = document.getElementById('voltar-banco');
+        const voltarSocialBtn = document.getElementById('voltar-social');
+        
+        // --- Funções ---
+        const openModal = () => {
+            helpModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            closeModalButton.focus();
+        };
+
+        const closeModal = () => {
+            helpModal.classList.add('hidden');
+            document.body.style.overflow = '';
+            helpButton.focus();
+        };
+
+        const showPage = (pageToShow) => {
+            mainContent.classList.add('hidden');
+            // Esconde todas as outras páginas
+            Array.from(pagesContainer.children).forEach(page => page.classList.add('hidden'));
+            // Mostra a página desejada
+            pageToShow.classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        const showMainContent = () => {
+            mainContent.classList.remove('hidden');
+            // Esconde todas as páginas
+            Array.from(pagesContainer.children).forEach(page => page.classList.add('hidden'));
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+
+        // --- Event Listeners ---
+        // Modal
+        helpButton.addEventListener('click', openModal);
+        closeModalButton.addEventListener('click', closeModal);
+        helpModal.addEventListener('click', (event) => {
+            if (event.target === helpModal) closeModal();
+        });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !helpModal.classList.contains('hidden')) closeModal();
+        });
+
+        // Navegação para Páginas
+        startAulaWhatsappBtn.addEventListener('click', (e) => { e.preventDefault(); showPage(aulaWhatsapp); });
+        startAulaPagarContasBtn.addEventListener('click', (e) => { e.preventDefault(); showPage(aulaPagarContas); });
+        startAulaYoutubeBtn.addEventListener('click', (e) => { e.preventDefault(); showPage(aulaYoutube); });
+        startBancoBtn.addEventListener('click', (e) => { e.preventDefault(); showPage(simuladorBanco); });
+        startSocialBtn.addEventListener('click', (e) => { e.preventDefault(); showPage(simuladorSocial); });
+
+        // Navegação para Voltar
+        const backButtons = [voltarWhatsappBtn, voltarPagarContasBtn, voltarYoutubeBtn, voltarBancoBtn, voltarSocialBtn];
+        backButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                showMainContent();
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+
